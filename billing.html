@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon.png">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <title>
+      UPCONSTRUCTION
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="./css/nucleo-icons.css" rel="stylesheet" />
+    <link href="./css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="./css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="./css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
+</head>
+
+<body class="g-sidenav-show   bg-gray-100">
+    <div class="min-height-150 bg-gradient-primary position-absolute w-100"></div>
+    <aside
+        class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
+        id="sidenav-main">
+        <div class="sidenav-header">
+            <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+                aria-hidden="true" id="iconSidenav"></i>
+            <a class="navbar-brand m-0" href="./layout.html "
+                target="_blank">
+                <img src="./img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
+                <span class="ms-1 font-weight-bold" href="#">.UPCONSTRUCTION</span>
+            </a>
+        </div>
+        <hr class="horizontal dark mt-0">
+        <div class="collapse navbar-collapse  w-auto h-100 " id="sidenav-collapse-main">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " href="./index.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./tables.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Tables</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./billing.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Billing</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./vr.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-app text-info text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Virtual Reality</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./rtvl.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">RTL</span>
+                    </a>
+                </li>
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./profile.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./sign.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-single-copy-04 text-warning text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Sign In</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <!--div class="sidenav-footer mx-3 ">
+      <div class="card card-plain shadow-none" id="sidenavCard">
+        <img class="w-50 mx-auto" src="./img/illustrations/icon-documentation.svg" alt="sidebar_illustration">
+        <div class="card-body text-center p-3 w-100 pt-0">
+          <div class="docs-info">
+            <h6 class="mb-0">Need help?</h6>
+            <p class="text-xs font-weight-bold mb-0">Please check our docs</p>
+          </div>
+        </div>
+      </div-->
+        <!--a href="https://www.creative-tim.com/learning-lab/bootstrap/license/argon-dashboard" target="_blank" class="btn btn-dark btn-sm w-100 mb-3">Documentation</a>
+      <a class="btn btn-primary btn-sm mb-0 w-100" href="https://www.creative-tim.com/product/argon-dashboard-pro?ref=sidebarfree" type="button">Upgrade to pro</a-->
+        </div>
+    </aside>
+    <main class="main-content position-relative border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur"
+            data-scroll="false">
+            <div class="container-fluid py-1 px-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+                        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white"
+                                href="javascript:;">Pages</a></li>
+                        <li class="breadcrumb-item text-sm text-white active" aria-current="page">Dashboard</li>
+                    </ol>
+                    <h6 class="font-weight-bolder text-white mb-0">Dashboard</h6>
+                </nav>
+                <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                        <div class="input-group">
+                            <span class="input-group-text text-body"><i class="fas fa-search"
+                                    aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Type here...">
+                        </div>
+                    </div>
+                    <ul class="navbar-nav  justify-content-end">
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-white font-weight-bold px-0">
+                                <i class="fa fa-user me-sm-1"></i>
+                                <span class="d-sm-inline d-none">Sign In</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
+                                <div class="sidenav-toggler-inner">
+                                    <i class="sidenav-toggler-line bg-white"></i>
+                                    <i class="sidenav-toggler-line bg-white"></i>
+                                    <i class="sidenav-toggler-line bg-white"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item px-3 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-white p-0">
+                                <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown pe-2 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-bell cursor-pointer"></i>
+                            </a>
+                            <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4"
+                                aria-labelledby="dropdownMenuButton">
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="javascript:;">
+                                        <div class="d-flex py-1">
+                                            <div class="my-auto">
+                                                <img src="./img/team-2.jpg" class="avatar avatar-sm  me-3 ">
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    <span class="font-weight-bold">New message</span> from Laur
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i>
+                                                    13 minutes ago
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="javascript:;">
+                                        <div class="d-flex py-1">
+                                            <div class="my-auto">
+                                                <img src="./img/small-logos/logo-spotify.svg"
+                                                    class="avatar avatar-sm bg-gradient-dark  me-3 ">
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    <span class="font-weight-bold">New album</span> by Travis Scott
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i>
+                                                    1 day
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item border-radius-md" href="javascript:;">
+                                        <div class="d-flex py-1">
+                                            <div class="avatar avatar-sm bg-gradient-secondary  me-3  my-auto">
+                                                <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <title>credit-card</title>
+                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <g transform="translate(-2169.000000, -745.000000)"
+                                                            fill="#FFFFFF" fill-rule="nonzero">
+                                                            <g transform="translate(1716.000000, 291.000000)">
+                                                                <g transform="translate(453.000000, 454.000000)">
+                                                                    <path class="color-background"
+                                                                        d="M43,10.7482083 L43,3.58333333 C43,1.60354167 41.3964583,0 39.4166667,0 L3.58333333,0 C1.60354167,0 0,1.60354167 0,3.58333333 L0,10.7482083 L43,10.7482083 Z"
+                                                                        opacity="0.593633743"></path>
+                                                                    <path class="color-background"
+                                                                        d="M0,16.125 L0,32.25 C0,34.2297917 1.60354167,35.8333333 3.58333333,35.8333333 L39.4166667,35.8333333 C41.3964583,35.8333333 43,34.2297917 43,32.25 L43,16.125 L0,16.125 Z M19.7083333,26.875 L7.16666667,26.875 L7.16666667,23.2916667 L19.7083333,23.2916667 L19.7083333,26.875 Z M35.8333333,26.875 L28.6666667,26.875 L28.6666667,23.2916667 L35.8333333,23.2916667 L35.8333333,26.875 Z">
+                                                                    </path>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="text-sm font-weight-normal mb-1">
+                                                    Payment successfully completed
+                                                </h6>
+                                                <p class="text-xs text-secondary mb-0">
+                                                    <i class="fa fa-clock me-1"></i>
+                                                    2 days
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <!--home nav strat-->
+        <!-- <div class="container-fluid">
+            <div class="row"> -->
+              <!--div class="col-lg-12 bg-img ps-0 pe-0"-->
+                <!--div class="ing" style="background: rgba(63, 63, 72, 0.25);"-->
+                  <!-- <nav class="navbar navbar-expand-lg bg-light">
+                    <a class="navbar-brand ps-5 font-weight-bolder" href="layout.html">.UPCONSTRUCTION</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#index.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#index.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./admin1.html">Admin</a>
+                        </li>
+                      </ul>
+                  </nav>
+                </div>
+        
+              </div> -->
+   
+    <div class="invoice mt-5">
+        <div class="invoice-header">
+          <h1>Invoice</h1>
+        </div>
+        <form class="invoice-form">
+          <label for="company-name" id="company-name-label">Company Name:</label>
+          <input type="text" id="company-name" placeholder="Enter company name" required>
+          <hr>
+          <label for="customer-name">Customer Name:</label>
+          <input type="text" id="customer-name" placeholder="Enter customer name" required>
+          <label for="date">Date:</label>
+          <input type="text" id="date" placeholder="Enter date" required>
+          <label for="mobile-number">Mobile Number:</label>
+          <input type="text" id="mobile-number" placeholder="Enter mobile number" required>
+          <label for="item-name">Item Name:</label>
+          <input type="text" id="item-name" placeholder="Enter item name" required>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" placeholder="Enter quantity" required>
+          <label for="rate">Rate:</label>
+          <input type="number" id="rate" placeholder="Enter rate" required>
+          <label for="amount">Amount:</label>
+          <input type="text" id="amount" readonly>
+        </form>
+        <div class="invoice-footer">
+          <div class="box">
+            Delivery Date
+          </div>
+          <div class="box">
+            Customer Signature
+          </div>
+        </div>
+        <div class="print-button">
+          <button onclick="window.print()"><i class="fas fa-print"></i> Print Invoice</button>
+        </div>
+      </div>
+    
+    <div class="container mt-5">
+    <div class="screen flex-center">
+        <form class="popup flex p-lg">
+          <div class="close-btn pointer flex-center p-sm">
+            <i class="ai-cross"></i>
+          </div>
+          
+            <!-- CARD FORM -->
+            <div class="flex-fill flex-vertical">
+              <div class="header flex-between flex-vertical-center">
+                <div class="flex-vertical-center">
+                  <i class="ai-bitcoin-fill size-xl pr-sm f-main-color"></i>
+                  <span class="title">
+                    <strong>AceCoin</strong><span>Pay</span>
+                  </span>
+                </div>
+                <div class="timer" data-id="timer">
+                  <span>0</span><span>5</span>
+                  <em>:</em>
+                  <span>0</span><span>0</span>
+                </div>
+              </div>
+              <div class="card-data flex-fill flex-vertical">
+                
+                <!-- Card Number -->
+                <div class="flex-between flex-vertical-center">
+                  <div class="card-property-title">
+                    <strong>Card Number</strong>
+                    <span>Enter 16-digit card number on the card</span>
+                  </div>
+                  <div class="f-main-color pointer"><i class="ai-pencil"></i> Edit</div>
+                </div>
+                
+                <!-- Card Field -->
+                <div class="flex-between">
+                  <div class="card-number flex-vertical-center flex-fill">
+                    <div class="card-number-field flex-vertical-center flex-fill">
+                      
+                      
+      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24px" height="24px"><path fill="#ff9800" d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"/><path fill="#d50000" d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"/><path fill="#ff3d00" d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"/></svg>
+                      
+                      
+                      
+                      <!--
+      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24px" height="24px"><path fill="#F44336" d="M33 11A13 13 0 1 0 33 37A13 13 0 1 0 33 11Z"/><path fill="#2196F3" d="M28,24h-8c0-0.682,0.068-1.347,0.169-2h7.661c-0.105-0.685-0.255-1.354-0.464-2h-6.732c0.225-0.694,0.508-1.362,0.84-2h5.051c-0.369-0.709-0.804-1.376-1.293-2h-2.465c0.379-0.484,0.79-0.941,1.233-1.367c-0.226-0.218-0.455-0.432-0.696-0.633c-2.252-1.872-5.146-3-8.304-3C7.82,11,2,16.82,2,24s5.82,13,13,13c3.496,0,6.664-1.388,9-3.633c0.443-0.426,0.854-0.883,1.232-1.367h-2.465c-0.489-0.624-0.923-1.291-1.293-2h5.051c0.333-0.638,0.616-1.306,0.841-2h-6.732c-0.209-0.646-0.358-1.315-0.464-2h7.661C27.932,25.347,28,24.682,28,24z"/></svg>
+                      -->
+                      
+                      <!--
+      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24px" height="24px"><path fill="#1565C0" d="M45,35c0,2.209-1.791,4-4,4H7c-2.209,0-4-1.791-4-4V13c0-2.209,1.791-4,4-4h34c2.209,0,4,1.791,4,4V35z"/><path fill="#FFF" d="M15.186 19l-2.626 7.832c0 0-.667-3.313-.733-3.729-1.495-3.411-3.701-3.221-3.701-3.221L10.726 30v-.002h3.161L18.258 19H15.186zM17.689 30L20.56 30 22.296 19 19.389 19zM38.008 19h-3.021l-4.71 11h2.852l.588-1.571h3.596L37.619 30h2.613L38.008 19zM34.513 26.328l1.563-4.157.818 4.157H34.513zM26.369 22.206c0-.606.498-1.057 1.926-1.057.928 0 1.991.674 1.991.674l.466-2.309c0 0-1.358-.515-2.691-.515-3.019 0-4.576 1.444-4.576 3.272 0 3.306 3.979 2.853 3.979 4.551 0 .291-.231.964-1.888.964-1.662 0-2.759-.609-2.759-.609l-.495 2.216c0 0 1.063.606 3.117.606 2.059 0 4.915-1.54 4.915-3.752C30.354 23.586 26.369 23.394 26.369 22.206z"/><path fill="#FFC107" d="M12.212,24.945l-0.966-4.748c0,0-0.437-1.029-1.573-1.029c-1.136,0-4.44,0-4.44,0S10.894,20.84,12.212,24.945z"/></svg>
+                      -->
+      
+                      <input class="numbers" type="number" min="1" max="9999" placeholder="0000">-
+                      <input class="numbers" type="number" placeholder="0000">-
+                      <input class="numbers" type="number" placeholder="0000">-
+                      <input class="numbers" type="number" placeholder="0000" data-bound="carddigits_mock" data-def="0000">
+                    </div>
+                    <i class="ai-circle-check-fill size-lg f-main-color"></i>
+                  </div>
+                </div>
+                
+                <!-- Expiry Date -->
+                <div class="flex-between">
+                  <div class="card-property-title">
+                    <strong>Expiry Date</strong>
+                    <span>Enter the expiration date of the card</span>
+                  </div>
+                  <div class="card-property-value flex-vertical-center">
+                    <div class="input-container half-width">
+                      <input class="numbers" data-bound="mm_mock" data-def="00" type="number" min="1" max="12" step="1" placeholder="MM">  
+                    </div>
+                    <span class="m-md">/</span>
+                    <div class="input-container half-width">
+                      <input class="numbers" data-bound="yy_mock" data-def="01" type="number" min="23" max="99" step="1" placeholder="YY">
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- CCV Number -->
+                <div class="flex-between">
+                  <div class="card-property-title">
+                    <strong>CVC Number</strong>
+                    <span>Enter card verification code from the back of the card</span>
+                  </div>
+                  <div class="card-property-value">
+                    <div class="input-container">
+                      <input id="cvc" type="password">
+                      <i id="cvc_toggler" data-target="cvc" class="ai-eye-open pointer"></i>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Name -->
+                <div class="flex-between">
+                  <div class="card-property-title">
+                    <strong>Cardholder Name</strong>
+                    <span>Enter cardholder's name</span>
+                  </div>
+                  <div class="card-property-value">
+                    <div class="input-container">
+                      <input id="name" data-bound="name_mock" data-def="Mr. Cardholder" type="text" class="uppercase" placeholder="CARDHOLDER NAME">
+                      <i class="ai-person"></i>
+                    </div>
+                  </div>
+                </div>
+                
+                
+              </div>
+              <div class="action flex-center">
+                <button type="submit" class="btn btn-primary pointer">Pay Now</button>
+              </div>
+            </div>
+          
+            <!-- SIDEBAR -->
+            <div class="sidebar flex-vertical">
+              <div>
+              
+              </div>
+              <div class="purchase-section flex-fill flex-vertical">
+                
+                <div class="card-mockup flex-vertical">
+                  <div class="flex-fill flex-between">
+                    <i class="ai-bitcoin-fill size-xl f-secondary-color"></i>
+                    <i class="ai-wifi size-lg f-secondary-color"></i>
+                  </div>
+                  <div>
+                    <div id="name_mock" class="size-md pb-sm uppercase ellipsis">mr. Cardholder</div>
+                    <div class="size-md pb-md">
+                      <strong>
+                        <span class="pr-sm">
+                          &#x2022;&#x2022;&#x2022;&#x2022;
+                        </span>
+                        <span id="carddigits_mock">0000</span>
+                      </strong>
+                    </div>
+                    <div class="flex-between flex-vertical-center">
+                      <strong class="size-md">
+                        <span id="mm_mock">00</span>/<span id="yy_mock">01</span>
+                      </strong>
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24px" height="24px"><path fill="#ff9800" d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"/><path fill="#d50000" d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"/><path fill="#ff3d00" d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"/></svg>
+                      
+                      <!--
+                      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24px" height="24px"><path fill="#1565C0" d="M45,35c0,2.209-1.791,4-4,4H7c-2.209,0-4-1.791-4-4V13c0-2.209,1.791-4,4-4h34c2.209,0,4,1.791,4,4V35z"/><path fill="#FFF" d="M15.186 19l-2.626 7.832c0 0-.667-3.313-.733-3.729-1.495-3.411-3.701-3.221-3.701-3.221L10.726 30v-.002h3.161L18.258 19H15.186zM17.689 30L20.56 30 22.296 19 19.389 19zM38.008 19h-3.021l-4.71 11h2.852l.588-1.571h3.596L37.619 30h2.613L38.008 19zM34.513 26.328l1.563-4.157.818 4.157H34.513zM26.369 22.206c0-.606.498-1.057 1.926-1.057.928 0 1.991.674 1.991.674l.466-2.309c0 0-1.358-.515-2.691-.515-3.019 0-4.576 1.444-4.576 3.272 0 3.306 3.979 2.853 3.979 4.551 0 .291-.231.964-1.888.964-1.662 0-2.759-.609-2.759-.609l-.495 2.216c0 0 1.063.606 3.117.606 2.059 0 4.915-1.54 4.915-3.752C30.354 23.586 26.369 23.394 26.369 22.206z"/><path fill="#FFC107" d="M12.212,24.945l-0.966-4.748c0,0-0.437-1.029-1.573-1.029c-1.136,0-4.44,0-4.44,0S10.894,20.84,12.212,24.945z"/></svg>
+                      -->
+      
+                    </div>
+                  </div>
+                </div>
+                
+                <ul class="purchase-props">
+                  <li class="flex-between">
+                    <span>Company</span>
+                    <strong>Apple</strong>
+                  </li>
+                  <li class="flex-between">
+                    <span>Order number</span>
+                    <strong>429252965</strong>
+                  </li>
+                  <li class="flex-between">
+                    <span>Product</span>
+                    <strong>MacBook Air</strong>
+                  </li>
+                  <li class="flex-between">
+                    <span>VAT (20%)</span>
+                    <strong>$100.00</strong>
+                  </li>
+                </ul>
+              </div>
+              <div class="separation-line"></div>
+              <div class="total-section flex-between flex-vertical-center">
+                <div class="flex-fill flex-vertical">
+                  <div class="total-label f-secondary-color">You have to Pay</div>
+                  <div>
+                    <strong>549</strong>
+                    <small>.99 <span class="f-secondary-color">USD</span></small>
+                  </div>
+                </div>
+                <i class="ai-coin size-lg"></i>
+              </div>
+            </div>
+        </d>
+      </div>
+    </div>
+</main>
+    <!-- ... -->
+    <!--footer class="footer">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/cxrana" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/cxrana" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ahrana/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="footer-text">Designed With <i class="fa-solid fa-heart"></i></p-->
+    <!--/footer-->
+    <!-- ... -->
+    <script>
+    // Calculate the amount based on quantity and rate
+function calculateAmount() {
+  const quantity = document.getElementById("quantity").value;
+  const rate = document.getElementById("rate").value;
+  const amount = quantity * rate || 0;
+
+  document.getElementById("amount").value = amount.toFixed(2);
+}
+
+// Add event listeners to quantity and rate fields
+document.getElementById("quantity").addEventListener("input", calculateAmount);
+document.getElementById("rate").addEventListener("input", calculateAmount);
+
+//pay starts
+
+/* COPY INPUT VALUES TO CARD MOCKUP */
+const bounds = document.querySelectorAll('[data-bound]');
+
+for(let i = 0; i < bounds.length; i++) {
+  const targetId = bounds[i].getAttribute('data-bound');
+  const defValue = bounds[i].getAttribute('data-def');
+  const targetEl = document.getElementById(targetId);
+  bounds[i].addEventListener('keyup', () => targetEl.innerText = bounds[i].value || defValue );
+}
+
+
+/* TOGGLE CVC DISPLAY MODE */
+const cvc_toggler = document.getElementById('cvc_toggler');
+
+cvc_toggler.addEventListener('click', () => {
+  const target = cvc_toggler.getAttribute('data-target');
+  const el = document.getElementById(target);
+  el.setAttribute('type', el.type === 'text' ? 'password' : 'text');
+});
+
+
+/* TIMER COUNTDOWN */
+const timer = document.querySelector('[data-id=timer]');
+let timeLeft = 5 * 60 + 1;
+
+const tick = () => {
+  if (timeLeft > 0) {
+    timeLeft--;
+    const date = new Date('2000-01-01 00:00:00');
+    date.setSeconds(timeLeft);
+    const str = date.toISOString();
+    timer.children[0].innerText = str[14];
+    timer.children[1].innerText = str[15];
+    timer.children[3].innerText = str[17];
+    timer.children[4].innerText = str[18];
+  }
+}
+
+setInterval(() => { tick(); }, 1000);
+tick();
+
+</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="./js/argon-dashboard.min.js?v=2.0.4"></script>
+</body>
+</html>
+
+
+    
+    
+    
+            
